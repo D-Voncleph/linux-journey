@@ -93,3 +93,32 @@ This week, I focused on mastering fundamental commands for navigating the filesy
     * **My Understanding:** Efficient for setting complete permission sets, widely used in professional environments. Requires knowing the numeric values.
 
 ---
+
+
+
+## Week 2: Essential Linux Utilities - Command Chaining and Redirection
+
+This week, I delved into more advanced command-line techniques, specifically mastering the use of pipes and output redirection, which are fundamental for scripting and automation.
+
+### 1. Command Chaining with Pipes (`|`)
+
+* **Purpose:** The pipe operator (`|`) allows me to take the standard output of one command and use it as the standard input for another command. It's like connecting the "spout" of one program to the "funnel" of another.
+* **Key Use Cases:**
+    * **Filtering Output:** `ps aux | grep [process_name]` - Used `ps aux` to list all processes, then piped its output to `grep` to filter for specific processes (e.g., `gnome-terminal`, `firefox`).
+    * **Paging Long Output:** `ls -l | less` - Used `less` to view long command outputs one screen at a time, preventing text from scrolling off.
+    * **Combining Utilities:** Chaining multiple commands to achieve complex tasks, like counting specific types of files (`find . -type f | wc -l`).
+
+### 2. Output Redirection (`>` and `>>`)
+
+* **Purpose:** These operators allow me to send the standard output of a command to a file, rather than displaying it on the terminal screen.
+* **Key Operators:**
+    * **`>` (Overwrite Redirection):**
+        * Sends command output to a file.
+        * **Crucially, if the file already exists, its previous contents are completely overwritten.** I practiced saving `date` output and then `ls -l` output to the same file, seeing the content replaced.
+        * *Example:* `date > my_log.txt` (creates/overwrites `my_log.txt` with the current date).
+    * **`>>` (Append Redirection):**
+        * Sends command output to a file.
+        * If the file exists, the output is **appended** to the end of the file, preserving existing content. If the file doesn't exist, it's created. I practiced adding `date` and `uptime` to a file, seeing content added sequentially.
+        * *Example:* `uptime >> my_log.txt` (adds uptime to `my_log.txt` without erasing the date).
+
+These techniques significantly enhance my ability to process and manage data directly from the command line, and are essential building blocks for shell scripting.

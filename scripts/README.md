@@ -26,7 +26,6 @@ This directory contains various Bash scripts developed as part of my Linux Journ
 * **gzip:** The `gzip` compression utility (typically pre-installed on Linux systems).
 
 ### Usage
-
 To run the script, provide the full or relative path to the directory you wish to backup as a command-line argument.
 
 ```bash
@@ -61,9 +60,9 @@ The script includes basic error handling for:
 
     tar command failure: Reports if the backup process itself fails.
 
-2. greeting.sh
+ ## 2. greeting.sh
 
-Description
+ ### Description
 
 greeting.sh is a simple interactive Bash script that prompts the user for their name and then displays a personalized welcome message. It demonstrates fundamental concepts of user input and shell variables.
 

@@ -1,8 +1,0 @@
-.:
-journal
-LICENSE
-README.md
-
-./journal:
-directory_snapshot.txt
-week1-summary.md

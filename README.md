@@ -8,6 +8,3 @@ This repository is a collection of my personal notes, useful commands, and shell
 - **Notes:** A file or series of files with a compilation of useful commands and configurations.
 
 ---
-
-### Connect with me
-
